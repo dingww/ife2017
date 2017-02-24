@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;	
+}
+#content{
+	width: 500px;
+	height: 400px;
+	background-color: #eee;
+	margin: 50px auto;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	position: relative;
+}
+p{
+	text-align: center;
+	line-height: 400px;
+}
+#myMenu{
+	width: 110px;
+	background-color: #fff;
+	border: 2px solid #ddd;		
+	display: none;
+	position: absolute;
+}
+li{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	padding-left: 10px;
+	cursor: pointer;
+}
+li:hover{
+	background-color: #eee;
+}
