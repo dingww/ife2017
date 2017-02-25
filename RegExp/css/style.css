@@ -61,11 +61,15 @@ ul{
 	z-index: 10;
 }
 li{
-	width: 280px;
+	width: 278px;
 	line-height: 25px;
 	list-style: none;
 	text-align: center;
 	border-bottom: 1px solid #ccc;
+}
+li:hover{
+	width: 278px;
+	background-color: #f3f3f3;	
 }
 #btn{
 	width: 150px;
@@ -150,6 +154,10 @@ li{
 		list-style: none;
 		text-align: center;
 		border-bottom: 1px solid #ccc;
+	}	
+	li:hover{
+		width: 99.9%;
+		background-color: #f3f3f3;	
 	}
 	.result{
 		width: 100%;	
