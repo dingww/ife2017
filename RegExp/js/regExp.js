@@ -50,7 +50,6 @@ window.onload = function() {
 		} else {
 			// alert(regExp);
 			testSelfDef(testTxt, regExp, oResult);
-
 		}
 	}
 
