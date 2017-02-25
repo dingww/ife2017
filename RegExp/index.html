@@ -3,34 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>正则表达式入门</title>
-	<style type="text/css">
-		#container{
-			width: 300px;
-			margin: 10px auto;
-		}
-		#isMatch1,#isMatch2{
-			width: 200px;
-			height: 40px;
-			border: 1px solid #ccc;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/regExp.js"></script>
 </head>
 <body>
-	<div id="container">
-		<div id="testPN">
-			<p>请在下框中输入电话号码</p>
-			<input type="text" id="input1" />
-			<input type="button" value="测试" id="btn1" />
-			<p id="isMatch1"></p>		
-		</div>
-		<div id="testStr">	
-			<p>请在下框中输入字符串</p>
-			<input type="text" id="input2" />
-			<input type="button" value="测试" id="btn2" />
-			<p id="isMatch2"></p>
-		</div>	
-	</div>
-	
+	<div id="container">		
+		<h3>匹配验证</h3>
+		<div class="text">
+			<label>请输入文本：</label>
+			<input type="text" id="inputTxt" /></div>
+		<div class="regExp">
+			<label>请输入正则表达式：</label>
+			<input type="text" id="inputReg" /><img src="images/down.png" id="down" />
+			<ul>
+				<li>匹配手机号码</li>
+				<li>匹配相邻单词</li>
+				<li>自定义</li>
+			</ul>
+		</div>			
+		<input type="button" value="开始验证" id="btn" />
+		<div class="result">
+			<p>验证结果：</p>
+			<div id="result">					
+			</div>	
+		</div>			
+	</div>	
 </body>
 </html>
