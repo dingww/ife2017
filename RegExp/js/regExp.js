@@ -27,6 +27,9 @@ window.onload = function() {
 			oReg.value = '';
 			oLi[i].onclick = function() {
 				oReg.value = reg[this.index];
+				if (reg[this.index] === '') {
+					oReg.focus();
+				}
 			}
 		}
 	}
@@ -48,7 +51,6 @@ window.onload = function() {
 			testReword(testTxt, regExp, oResult);
 			// alert(regExp);
 		} else {
-			// alert(regExp);
 			testSelfDef(testTxt, regExp, oResult);
 		}
 	}
@@ -82,10 +84,19 @@ window.onload = function() {
 		var Reg = eval(reg);
 		var matchT = text.match(Reg);
 		var item = '';
-		if (matchT) {
-			item += '<p>是否有匹配：true</p><p>您的匹配项是：' + matchT + '</p>';
+		if (text === '' && reg === '') {
+			item += '<p>请输入待匹配的文本和正则表达式！</p>'
+		} else if (text === '') {
+			item += '<p>请输入待匹配的文本！</p>'
+		} else if (reg === '') {
+			item += '<p>请输入正则表达式！</p>'
 		} else {
-			item += '<p>是否有匹配：false</p><p>提示：没有找到匹配项。</p>'
+			if (matchT) {
+				item += '<p>是否有匹配：true</p><p>您的匹配项是：' + matchT + '</p>';
+			} else {
+				item += '<p>是否有匹配：false</p><p>提示：没有找到匹配项。</p>'
+			}
+			node.innerHTML = item;
 		}
 		node.innerHTML = item;
 	}

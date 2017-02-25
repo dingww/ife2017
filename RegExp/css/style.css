@@ -46,6 +46,9 @@ img{
 	top: 4px;
 	right: 17px;
 }
+img:hover{
+	cursor: pointer;
+}
 ul{
 	width: 280px;
 	height: 78px;	
@@ -70,18 +73,23 @@ li{
 li:hover{
 	width: 278px;
 	background-color: #f3f3f3;	
+	cursor: pointer;
 }
 #btn{
-	width: 150px;
+	width: 120px;
 	height: 30px;
 	font-size: 1em;
 	color: #fff;
 	background-color: #38BA72;
-	text-align: center;
+	text-align: center;	
 	border: none;
 	border-radius: 3px;
 	margin: 10px auto;
 	display: block;
+}
+#btn:hover{
+	background-color: #4CC665;
+	cursor: pointer;
 }
 .result{
 	width: 420px;
@@ -158,6 +166,9 @@ li:hover{
 	li:hover{
 		width: 99.9%;
 		background-color: #f3f3f3;	
+	}
+	#btn{
+		width: 100%;
 	}
 	.result{
 		width: 100%;	
