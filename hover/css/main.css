@@ -44,6 +44,8 @@ img{
 	color: transparent;	
 	font-size: 2.3rem;	
 	text-align: center;
+	-webkit-background-clip:text;	
+	-moz-background-clip:text;	
 	background-clip:text;	
 	background-image: -webkit-linear-gradient(left,#EF766D,#70CFAF 25%,#EF766D 50%,#70CFAF 75%,#EF766D);
 	background-size: 200% 100%;
@@ -55,13 +57,15 @@ img{
 .content a{		
 	color: transparent;	
 	font-size: 1.5rem;	
+	-webkit-background-clip:text;	
+	-moz-background-clip:text;	
 	background-clip:text;	
 	background-image: -webkit-linear-gradient(left,#EF766D,#70CFAF 25%,#EF766D 50%,#70CFAF 75%,#EF766D);
 	background-size: 200% 100%;
 	animation: streamer 3s infinite;
 	position: relative;
 	top: 40%;	
-	display: inline-block;
+	display: block;
 	z-index: 1;	
 }
 .slideIn {
