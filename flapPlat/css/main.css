@@ -3,12 +3,10 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-
 .wrap{
 	width:200px;	
 	margin: 50px auto;
 }
-
 label{
 	width: 200px;	
 	color: #fff;
@@ -38,7 +36,7 @@ input + ul{
 input:checked + ul{
 	display: block;
 }
-input:checked + input:enabled ~ li{
+/*input:checked + input:enabled ~ li{
 	display: none;
 }
-
+*/
