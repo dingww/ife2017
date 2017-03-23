@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#stage{	
+	width: 450px;
+	height: 300px;
+	border: 1px solid #ccc;	
+	perspective: 1000px;	
+	position: absolute;
+	top: 50%;	
+	left: 50%;	
+	margin: -150px -225px;
+	overflow: hidden;	
+}
+#wrap{	
+	transform-style: preserve-3d;
+	margin: 0px auto;	
+	transition: transform 1s ease 0s;	
+}
+img{
+	width: 100%;
+	position: absolute;
+} 
+img:nth-child(1){
+	-moz-transform: rotateY(0deg) translateZ(1000px);
+	-webkit-transform: rotateY(0deg) translateZ(1000px);
+	transform: rotateY(0deg) translateZ(1000px);
+}
+img:nth-child(2){
+	-moz-transform: rotateY(36deg) translateZ(1000px);
+	-webkit-transform: rotateY(36deg) translateZ(1000px);
+	transform: rotateY(36deg) translateZ(1000px);
+}
+img:nth-child(3){
+	-moz-transform: rotateY(72deg) translateZ(1000px);
+	-webkit-transform: rotateY(72deg) translateZ(1000px);
+	transform: rotateY(72deg) translateZ(1000px);
+}
+img:nth-child(4){
+	-moz-transform: rotateY(108deg) translateZ(1000px);
+	-webkit-transform: rotateY(108deg) translateZ(1000px);
+	transform: rotateY(108deg) translateZ(1000px);
+}
+img:nth-child(5){
+	-moz-transform: rotateY(144deg) translateZ(1000px);
+	-webkit-transform: rotateY(144deg) translateZ(1000px);
+	transform: rotateY(144deg) translateZ(1000px);
+}
+img:nth-child(6){
+	-moz-transform: rotateY(180deg) translateZ(1000px);
+	-webkit-transform: rotateY(180deg) translateZ(1000px);
+	transform: rotateY(180deg) translateZ(1000px);
+}
+img:nth-child(7){
+	-moz-transform: rotateY(216deg) translateZ(1000px);
+	-webkit-transform: rotateY(216deg) translateZ(1000px);
+	transform: rotateY(216deg) translateZ(1000px);
+}
+img:nth-child(8){
+	-moz-transform: rotateY(252deg) translateZ(1000px);
+	-webkit-transform: rotateY(252deg) translateZ(1000px);
+	transform: rotateY(252deg) translateZ(1000px);
+}
+img:nth-child(9){
+	-moz-transform: rotateY(288deg) translateZ(1000px);
+	-webkit-transform: rotateY(288deg) translateZ(1000px);
+	transform: rotateY(288deg) translateZ(1000px);
+}
+img:nth-child(10){
+	-moz-transform: rotateY(324deg) translateZ(1000px);
+	-webkit-transform: rotateY(324deg) translateZ(1000px);
+	transform: rotateY(324deg) translateZ(1000px);
+}
+#left{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 115px;
+	left: 0px;
+	z-index: 100;
+	visibility: hidden;
+}
+#right{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 115px;
+	right: 0px;
+	z-index: 100;
+	visibility: hidden;
+}
